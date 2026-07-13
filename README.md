@@ -472,7 +472,7 @@ GitHub:
 https://github.com/Rehbar250
 
 LinkedIn:
-(Add your LinkedIn profile)
+www.linkedin.com/in/rehbar-miyan-325498236
 
 ---
 
