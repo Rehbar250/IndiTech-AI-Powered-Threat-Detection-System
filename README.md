@@ -1,79 +1,474 @@
-# IndiTech | AI-Powered Threat Detection Platform for Banking
+# 🛡️ IndiTech – AI-Powered Threat Detection Platform for Banking
 
-IndiTech is an enterprise-grade cybersecurity platform prototype designed for banks and financial institutions to detect **Privileged Access Misuse**, **Insider Threats**, and **Suspicious User Behavior** using real-time behavioral analytics and dynamic AI risk scoring.
+> **Detect. Analyze. Respond.**
+>
+> An AI-powered cybersecurity platform prototype designed to detect insider threats, privileged access misuse, and anomalous user behavior in banking environments.
 
-The platform continuously monitors privileged administrators, vendors, and employees. It detects anomalous activities in real time, assigns risk scores, interprets threats using an AI Copilot assistant, and enables security teams to respond immediately to mitigate breaches.
-
----
-
-## 🔐 Credentials & Quick Access
-
-To access the platform, click the quick-autofill links on the login screen or enter these credentials:
-
-| Field | Demo Credential | Note |
-| :--- | :--- | :--- |
-| **Email** | `alice.smith@inditech.bank` | Monitored SOC Analyst account |
-| **Password** | `password` | Standard demo password |
-| **MFA OTP** | `123456` | Hardware OTP token code (or leave blank) |
-| **Access Role** | `SOC Analyst` | Select this profile for full mitigation privileges |
-
-Other available role-switcher profiles:
-*   **Security Administrator**: `bob.johnson@inditech.bank`
-*   **Compliance Auditor**: `charlie.brown@inditech.bank`
-*   **System Administrator**: `david.miller@inditech.bank` (Target threat profile)
+![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-4.0-38BDF8?logo=tailwindcss)
+![FastAPI](https://img.shields.io/badge/FastAPI-Python-009688?logo=fastapi)
+![Vite](https://img.shields.io/badge/Vite-Frontend-646CFF?logo=vite)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
-## 🚀 Presentation Script & Demo Workflow
+# 📌 Overview
 
-Present the prototype to judges by stepping through the interactive **Demo Flow Control Panel** (visible at the top center of the header bar):
+**IndiTech** is an AI-powered cybersecurity platform prototype built for banks and financial institutions to detect **Privileged Access Misuse**, **Insider Threats**, and **Anomalous User Behavior**.
 
-### Step 1: Authentication & Entrance
-1. Start on the login screen, autofill `alice.smith@inditech.bank` with the password `password`, and click **Authenticate Session**.
-2. Input the MFA code `123456` and select **SOC Analyst** as your Access Profile. Click **Initialize Security Session**.
-3. The dashboard loads. All system perimeters report green. The geotracking session map shows normal logins restricted to Mumbai and Bangalore headquarters.
+The platform continuously monitors privileged users, analyzes behavioral patterns, calculates AI-based risk scores, generates intelligent alerts, assists Security Operations Center (SOC) analysts using an AI Copilot, and creates professional incident reports.
 
-### Step 2: Anomaly Appears (Geo-Jump)
-1. On the top control panel, click **Next Step** (advancing to Step 2: Login Anomaly).
-2. The world map updates instantly with a flashing red radar dot over **Moscow, Russia**.
-3. Navigating to the **Live Activity** tab reveals the trigger: `David Miller - Admin Login - Moscow, Russia` at 02:14 AM IST.
-4. Click the **AI Copilot** tab and click the prompt chip: `"Why was David flagged?"` -> the Copilot responds detailing David's geovelocity anomaly and unrecognized Linux workstation host.
-
-### Step 3: Sabotage & Risk Spike
-1. Click **Next Step** again (advancing to Step 3: Threat Spikes).
-2. The aggregate risk score spikes. A critical alarm notification flashes in red next to the **Alerts Center** in the sidebar.
-3. The **System Status** widget at the bottom updates to `Security Incident Active`.
-4. Open the **Alerts Center** to triage David's critical alert (Risk Score: 95/100). The evidence logs detail a 1.8 GB finance payroll database export and a shell command sabotage attempt: `sh shred_audit_logs.sh && DROP TABLE client_records;`.
-5. Ask the AI Copilot: `"Recommend next action."` -> it explains playbooks and root causes.
-
-### Step 4: Mitigation Action Taken
-1. In the Alerts Center details view, click the **Block User Account** button.
-2. A **canvas-confetti blast** triggers in celebration of neutralizing the threat!
-3. David Miller's status updates to `BLOCKED`. His session token is revoked, and the risk score recedes.
-4. Navigating to **Incident Reports** displays the audit record. Open the report and click **Download PDF** to open the browser's clean print layout.
-5. In **Audit Logs**, click **Export CSV** to download a spreadsheet of the forensic log trail.
+This project was built as a **Hackathon Prototype** to demonstrate how Artificial Intelligence can strengthen banking security through intelligent threat detection and rapid incident response.
 
 ---
 
-## 🛠️ Local Setup
+# 🚨 Problem Statement
 
-### Frontend (React + Vite)
-From the root directory:
+Banks manage thousands of privileged users, including:
+
+- Employees
+- Database Administrators
+- System Administrators
+- Contractors
+- Third-Party Vendors
+
+Traditional authentication methods such as passwords and Multi-Factor Authentication verify identity but **cannot determine whether a user is behaving suspiciously after login**.
+
+Examples include:
+
+- Insider Threats
+- Credential Compromise
+- Unauthorized Privileged Access
+- Large Confidential Data Downloads
+- Suspicious Database Queries
+- Privilege Escalation
+
+Organizations need an intelligent system capable of detecting abnormal behavior before it becomes a major security incident.
+
+---
+
+# 💡 Solution
+
+IndiTech uses AI-powered behavioral analytics to:
+
+- Monitor privileged user activities
+- Detect suspicious behavior
+- Calculate dynamic AI Risk Scores
+- Generate real-time alerts
+- Assist analysts using an AI Copilot
+- Produce professional incident reports
+
+The current version uses **simulated banking data** and **mock AI logic** to demonstrate enterprise-level cybersecurity workflows.
+
+---
+
+# 🔐 Demo Credentials
+
+> **Note:** This is a hackathon prototype. Authentication and MFA are simulated for demonstration purposes.
+
+| Role | Email | Password |
+|------|-------|----------|
+| 👨‍💻 SOC Analyst | **soc@inditech.ai** | **Admin@123** |
+| 🛡 Security Administrator | **admin@inditech.ai** | **Admin@123** |
+| 📊 Risk Manager | **manager@inditech.ai** | **Admin@123** |
+| 📋 Auditor | **auditor@inditech.ai** | **Admin@123** |
+
+### Demo MFA OTP
+
+```text
+123456
+```
+
+---
+
+# 🎬 Quick Demo
+
+1. Login using the SOC Analyst account.
+2. Complete MFA verification.
+3. Dashboard loads with normal banking activities.
+4. Navigate to **Live Activity**.
+5. Click **Simulate Threat**.
+6. Observe AI Risk Score increasing.
+7. Open **Alerts Center**.
+8. Investigate the critical alert.
+9. Ask the AI Copilot:
+
+```
+Why was David flagged?
+```
+
+10. Generate the Incident Report.
+11. Block the suspicious user.
+
+---
+
+# ✨ Features
+
+- ✅ Secure Authentication
+- ✅ Multi-Factor Authentication (MFA)
+- ✅ Executive Security Dashboard
+- ✅ Live Banking Activity Monitoring
+- ✅ AI Threat Detection Engine
+- ✅ AI Risk Scoring
+- ✅ Real-Time Security Alerts
+- ✅ AI Security Copilot
+- ✅ Incident Report Generation
+- ✅ Audit Logs
+- ✅ Compliance Dashboard
+- ✅ Role-Based Access Control
+- ✅ Responsive Enterprise UI
+
+---
+
+# 🖥️ Modules
+
+## 🔑 Authentication
+
+- Login
+- Forgot Password
+- MFA Verification
+
+---
+
+## 📊 Dashboard
+
+Displays
+
+- Total Users
+- Active Sessions
+- High-Risk Users
+- Threats Today
+- Blocked Accounts
+- Critical Alerts
+
+Charts
+
+- Threat Distribution
+- Risk Trend
+- Login Timeline
+- Risk Heatmap
+- World Login Map
+
+Widgets
+
+- Recent Alerts
+- AI Recommendations
+- Top Risk Users
+- Live Threat Feed
+
+---
+
+## ⚡ Live Activity
+
+Simulates banking events including
+
+- Employee Login
+- Admin Login
+- Database Access
+- Payroll Download
+- USB Device Connection
+- Failed MFA
+- Privilege Escalation
+- Suspicious SQL Queries
+- PowerShell Execution
+
+---
+
+## 🧠 AI Threat Detection
+
+AI Risk Engine evaluates
+
+- Unknown Device
+- Login Location
+- Login Time
+- Failed Logins
+- Database Access
+- Sensitive File Download
+- Privilege Escalation
+- Suspicious Commands
+
+Generates
+
+- Risk Score
+- Threat Level
+- AI Explanation
+
+---
+
+## 🚨 Alerts Center
+
+Displays
+
+- Critical Alerts
+- High Risk
+- Medium Risk
+- Low Risk
+
+Analysts can
+
+- Investigate
+- Block User
+- Force MFA
+- Escalate Incident
+- Close Alert
+
+---
+
+## 🤖 AI Copilot
+
+Supports natural language queries such as
+
+- Why was David flagged?
+- Explain this risk score.
+- Recommend next action.
+- Summarize today's threats.
+- Generate incident summary.
+
+---
+
+## 📄 Incident Reports
+
+Automatically generates reports including
+
+- Incident ID
+- User Details
+- Timeline
+- AI Analysis
+- Evidence
+- Risk Score
+- Recommended Actions
+
+---
+
+## 📋 Audit Logs
+
+Tracks
+
+- User
+- Device
+- IP Address
+- Timestamp
+- Status
+- Activity
+
+Supports
+
+- Search
+- Filters
+- CSV Export
+
+---
+
+## 🛡 Compliance Dashboard
+
+Displays
+
+- RBI Compliance
+- ISO 27001 Status
+- MFA Coverage
+- Security Score
+- Audit Readiness
+
+---
+
+# 🧠 AI Threat Detection Workflow
+
+```text
+User Login
+      │
+      ▼
+Activity Monitoring
+      │
+      ▼
+Behavior Analysis
+      │
+      ▼
+AI Risk Engine
+      │
+      ▼
+Risk Score Calculation
+      │
+      ▼
+Alert Generation
+      │
+      ▼
+SOC Investigation
+      │
+      ▼
+AI Copilot
+      │
+      ▼
+Incident Report
+```
+
+---
+
+# 🏗️ System Architecture
+
+```text
+Bank Users
+     │
+     ▼
+Authentication & MFA
+     │
+     ▼
+Activity Monitoring
+     │
+     ▼
+Behavior Analytics
+     │
+     ▼
+AI Risk Engine
+     │
+     ▼
+Threat Detection
+     │
+     ▼
+Alerts Center
+     │
+     ├── AI Copilot
+     ├── Incident Reports
+     └── Audit Logs
+```
+
+---
+
+# 🛠️ Technology Stack
+
+## Frontend
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Recharts
+
+## Backend
+
+- FastAPI (Mock APIs)
+
+## Database
+
+- PostgreSQL (Mock Data)
+
+## AI
+
+- Simulated AI Risk Engine
+- AI Copilot (Prototype)
+
+---
+
+# 📂 Project Structure
+
+```text
+IndiTech/
+├── src/
+├── backend/
+├── docs/
+├── public/
+└── README.md
+```
+
+---
+
+# 🚀 Getting Started
+
+## Clone Repository
+
 ```bash
-# 1. Install dependencies
-npm install
+git clone https://github.com/Rehbar250/IndiTech-AI-Powered-Threat-Detection-System.git
+```
 
-# 2. Run the development server
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Start Frontend
+
+```bash
 npm run dev
 ```
 
-### Backend Mock APIs (FastAPI)
-From the `/backend` subdirectory:
+Frontend
+
+```
+http://localhost:5173
+```
+
+---
+
+## Start Backend
+
 ```bash
-# 1. Install Python packages
+cd backend
+
 pip install -r requirements.txt
 
-# 2. Run the Uvicorn server
-python -m uvicorn main:app --reload --port 8000
+uvicorn main:app --reload
 ```
-*Documentation available at: http://localhost:8000/docs*
+
+Backend
+
+```
+http://localhost:8000
+```
+
+---
+
+# 🎯 Future Scope
+
+- AI/ML Anomaly Detection Models
+- Active Directory Integration
+- SIEM Integration
+- WebSocket Live Monitoring
+- Email & SMS Alerts
+- Behavioral Biometrics
+- Quantum-Safe Cryptography
+- Cloud Deployment
+- Mobile SOC Application
+- Predictive Threat Intelligence
+
+---
+
+# 📷 Screenshots
+
+> Add screenshots here after deployment.
+
+- Login Screen
+- Dashboard
+- Live Activity
+- Threat Detection
+- Alerts Center
+- AI Copilot
+- Incident Report
+
+---
+
+# 👨‍💻 Developer
+
+**Rehbar Miyan**
+
+AI Enthusiast | Full Stack Developer
+
+GitHub:
+https://github.com/Rehbar250
+
+LinkedIn:
+(Add your LinkedIn profile)
+
+---
+
+# 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+# ⭐ Acknowledgements
+
+Developed as a **Hackathon Prototype** to demonstrate how Artificial Intelligence can improve banking cybersecurity through insider threat detection, behavioral analytics, and intelligent incident response.
+
+If you found this project useful, please consider giving it a ⭐ on GitHub!
