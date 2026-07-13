@@ -69,10 +69,10 @@ The current version uses **simulated banking data** and **mock AI logic** to dem
 
 | Role | Email | Password |
 |------|-------|----------|
-| 👨‍💻 SOC Analyst | **soc@inditech.ai** | **Admin@123** |
-| 🛡 Security Administrator | **admin@inditech.ai** | **Admin@123** |
-| 📊 Risk Manager | **manager@inditech.ai** | **Admin@123** |
-| 📋 Auditor | **auditor@inditech.ai** | **Admin@123** |
+| 👨‍💻 SOC Analyst | **alice.smith@inditech.bank** | **password** |
+| 🛡 Security Administrator | **bob.johnson@inditech.bank** | **password** |
+| 📊 System Administrator | **david.miller@inditech.bank** | **password** |
+| 📋 Auditor | **charlie.brown@inditech.bank** | **password** |
 
 ### Demo MFA OTP
 
@@ -438,12 +438,27 @@ http://localhost:8000
 > Add screenshots here after deployment.
 
 - Login Screen
+  <img width="960" height="450" alt="image" src="https://github.com/user-attachments/assets/af7561ff-46c8-4ce7-a1b2-246973d9d356" />
+
 - Dashboard
+  <img width="960" height="449" alt="image" src="https://github.com/user-attachments/assets/9fb5f52e-99f9-4847-ad8b-6afdd5fcd877" />
+
 - Live Activity
+  <img width="960" height="445" alt="image" src="https://github.com/user-attachments/assets/dc63bd75-183f-47f3-93d3-22200b9cff62" />
+
 - Threat Detection
+  <img width="960" height="447" alt="image" src="https://github.com/user-attachments/assets/2c6b7869-6ba7-4ba5-9fb4-df83686dfdb3" />
+  <img width="960" height="449" alt="image" src="https://github.com/user-attachments/assets/b1d5db09-d355-4198-bab2-f9598c93c75a" />
+
 - Alerts Center
+  <img width="960" height="445" alt="image" src="https://github.com/user-attachments/assets/50b43f36-7d70-4c09-99d7-677980aab2fa" />
+  
 - AI Copilot
+  <img width="960" height="447" alt="image" src="https://github.com/user-attachments/assets/5194045b-0ea9-48f1-b958-df08a2926fb6" />
+
 - Incident Report
+  <img width="960" height="449" alt="image" src="https://github.com/user-attachments/assets/f7c2e525-8810-4fb0-a65a-16fa0c81b44a" />
+
 
 ---
 
